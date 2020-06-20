@@ -1,11 +1,35 @@
 import React from 'react';
 
+import './Projects.css';
 
 function Projects() {
 
     return (
         <div className="projects">
-            <p>Projects</p>
+            <div className="card-container">
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+                <div className="card"></div>
+            </div>
         </div>
 
     )

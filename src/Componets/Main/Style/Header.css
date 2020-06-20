@@ -80,3 +80,14 @@ nav ul li{
     justify-content: space-around;
     margin-right: 25px;
 }
+
+@media only screen and (max-width: 600px){
+    .logo h1{
+        font-size: 30px;
+    }
+
+    .header-logo{
+        background: rgb(181,181,181);
+        background: linear-gradient(140deg, rgba(181,181,181,1) 0%, rgba(41,41,41,1) 54%, rgba(0,0,0,1) 100%);
+    }
+}

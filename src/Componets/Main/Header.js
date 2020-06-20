@@ -70,7 +70,6 @@ function Header() {
                 'temp': calculateCelsius(res.data.main.temp),
                 'weather': res.data.weather[0].main
             });
-            console.log(res);
         } catch (e) {
             console.warn(e);
         }
@@ -94,7 +93,7 @@ function Header() {
         <div className="header-logo">
             <div className="header-nav">
                 <Link to='/' className="logo">
-                    <h1 >Cva</h1>
+                    <h1>Cva</h1>
                 </Link>
                 <nav>
                     <ul>
