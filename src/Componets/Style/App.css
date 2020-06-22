@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.home, .about, .portfolio, .resume, .contact{
+    height: 100vh;
+    
+}
+
+.home{
+    background-color: deeppink;
+}
+
+.about{
+    
+    background-color: blue;
+}
+
+.portfolio{
+    background-color: chartreuse;
+}
+
+.resume{
+    background-color: darkgoldenrod;
+}
+
+.contact{
+    background-color: darkred;
+}
