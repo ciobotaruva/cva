@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import axios from 'axios';
 
 import '../Style/Navbar.css';
@@ -7,11 +7,8 @@ import '../Style/Navbar.css';
 export default function Navbar() {
 
     const [time, setTime] = useState({
-        'hours': '',
-        'minutes': '',
-        'seconds': ''
+        'time': ''
     });
-
 
     const [location, setLocation] = useState({
         'longitude': '',
@@ -30,7 +27,6 @@ export default function Navbar() {
             'latitude': position.coords.latitude
         })
     }
-
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -82,63 +78,46 @@ export default function Navbar() {
     function clock() {
         const theTime = new Date();
         setTime({
-            'hours': theTime.getHours(),
-            'minutes': theTime.getMinutes(),
-            'seconds': theTime.getSeconds()
+            'time': theTime.toLocaleTimeString()
         })
     }
-    setInterval(clock, 1000);
+
+    useEffect(() => {
+        setInterval(clock, 500);
+    }, [])
 
     return (
         <div className='navbar'>
             <div className="logo-nav">
                 <Link
                     className="logo"
-                    activeClass="active"
-                    to='home-section'
-                    spy={true}
-                    smooth={false}
+                    to='/#home'
+                    smooth={true}
                     offset={0}
                     duration={500}
                 >Cva</Link>
                 <ul>
                     <Link
-                        activeClass="active"
-                        to='about-section'
-                        spy={true}
-                        smooth={false}
-                        offset={0}
-                        duration={500}
+                        className="nav-link"
+                        to='/#about'
                     >
                         <li>About</li>
                     </Link>
                     <Link
-                        activeClass="active"
-                        to='portfolio-section'
-                        spy={true}
-                        smooth={false}
-                        offset={0}
-                        duration={500}
+                        className="nav-link"
+                        to='/#portfolio'
                     >
                         <li>Portfolio</li>
                     </Link>
                     <Link
-                        activeClass="active"
-                        to='resume-section'
-                        spy={true}
-                        smooth={false}
-                        offset={0}
-                        duration={500}
+                        className="nav-link"
+                        to='/#resume'
                     >
                         <li>Resume</li>
                     </Link>
                     <Link
-                        activeClass="active"
-                        to='contact-section'
-                        spy={true}
-                        smooth={false}
-                        offset={0}
-                        duration={500}
+                        className="nav-link"
+                        to='/#contact'
                     >
                         <li>Contact</li>
                     </Link>
@@ -147,9 +126,7 @@ export default function Navbar() {
             <div className="clock-weather">
                 <div className="data">
                     <div className="clock">
-                        <span>{time.hours}:</span>
-                        <span>{time.minutes}:</span>
-                        <span>{time.seconds}</span>
+                        <span>{time.time}</span>
                     </div>
                     <span>{weather.city}</span>
                     <span>{weather.temp}&#8451;</span>

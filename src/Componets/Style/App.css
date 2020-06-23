@@ -5,28 +5,11 @@
 }
 
 
-.home, .about, .portfolio, .resume, .contact{
+.home-section, .about-section, .portfolio-section, .resume-section, .contact-section{
     height: 100vh;
     
 }
 
-.home{
-    background-color: deeppink;
-}
-
-.about{
-    
-    background-color: blue;
-}
-
-.portfolio{
-    background-color: chartreuse;
-}
-
-.resume{
-    background-color: darkgoldenrod;
-}
-
-.contact{
-    background-color: darkred;
+.home-section,.about-section, .portfolio-section,.portfolio-section,.resume-section,.contact-section {
+    background-color: #242726;
 }

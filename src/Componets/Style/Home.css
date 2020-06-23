@@ -1,3 +1,65 @@
-.social{
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-css{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.image-css{
+    displa:flex;
+}
+
+.image-css img:nth-child(1){
+    width: 300px;
     position: absolute;
+}
+
+.image-css img:nth-child(2){
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.home-info h1{
+    font-size: 17px;
+    font-weight: normal;
+    color: #fafafa;
+}
+
+.home-info h2{
+    font-size: 68px;
+    color:#fff5f5f5;
+}
+
+.home-info h3{
+    font-size: 60px;
+    color:#FFED4F;
+}
+
+.home-info h4{
+    width: 60%;
+    color:#fff5f5f5;
+}
+
+button{
+    height: 40px;
+    width: 180px;
+    margin-top: 30px;
+    background-color: #FFED4F;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
 }

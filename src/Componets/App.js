@@ -17,16 +17,17 @@ import '../Componets/Style/App.css';
 export default function App() {
 
     return (
-        <div className="app">
-            <Navbar />
-            <Social />
-            <Home />
-            <About />
-            <Portfolio />
-            <Resume />
-            <Contact />
-
-        </div>
+        <BrowserRouter>
+            <div className="app">
+                <Navbar />
+                <Social />
+                <Home exact path='home' component={Home} />
+                <About exact path='about' component={About} />
+                <Portfolio exact path='portfolio' component={Portfolio} />
+                <Resume exact path='resume' component={Resume} />
+                <Contact exact path='contact' component={Contact} />
+            </div>
+        </BrowserRouter>
     )
 
 }
