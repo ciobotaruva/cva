@@ -51,11 +51,11 @@ ul{
     height: 100%;
 }
 
-ul li{
+.logo-nav ul li{
     height: 50%;
 }
 
-ul li:hover{
+.logo-nav ul li:hover{
     color: #fff;
     border-bottom: 1px solid #fff;
     cursor: pointer;

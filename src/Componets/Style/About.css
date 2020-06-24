@@ -1,0 +1,84 @@
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+
+.about-section h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-section p{
+    width: 500px;
+    text-align: justify;
+    padding: 15px 0;
+    font-size: 17px;
+}
+
+.about-section p:nth-child(4){
+    border-bottom: 1px solid #FFED4F;
+}
+
+.tech{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 100px;
+}
+
+.tech li{
+    width:33.33333333333333%;
+    list-style-position: inside;
+    margin-right: 5px;
+}
+
+.about-css span{
+    color:#FFED4F;
+    font-size: 18px;
+}
+
+.tech-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.react-icon, .js-icon, .html-icon, .css-icon{
+    height: 160px;
+    width: 160px;
+}
+
+.react-icon{
+    color: #61DBFB;
+}
+
+.js-icon{
+    color:#FFED4F
+}
+
+.html-icon{
+    color:#e34c26;
+}
+
+.css-icon{
+    color:#264de4;
+}
+
+
+
+

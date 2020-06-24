@@ -34,16 +34,16 @@
 }
 
 .home-info h2{
-    font-size: 68px;
+    font-size: 62px;
     color:#fff5f5f5;
 }
 
 .home-info h3{
-    font-size: 60px;
+    font-size: 52px;
     color:#FFED4F;
 }
 
-.home-info h4{
+.home-info p{
     width: 60%;
     color:#fff5f5f5;
 }
@@ -51,15 +51,15 @@
 button{
     height: 40px;
     width: 180px;
-    margin-top: 30px;
-    background-color: #FFED4F;
-    border: none;
+    margin-top: 40px;
+    background-color: #242726;
+    border: 2px solid #FFED4F;
     border-radius: 6px;
     font-size: 20px;
+    color: #FFED4F;
 }
 
 button:hover{
-    background-color: #fff;
     transform: scale(1.1);
     transition: 0.3s ease-in;
 }

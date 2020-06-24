@@ -14,11 +14,10 @@ export default function Home() {
                     <h2>Ciobotaru</h2>
                     <h2>Valentin - Adrian</h2>
                     <h3>Web Developer</h3>
-                    <h4>I'm based in Brasov, Romania specializing in building and designing websites, one page applications.</h4>
+                    <p>I'm based in Brasov, Romania specializing in building and designing websites, one page applications.</p>
                     <button>Get In Touch</button>
                 </div>
                 <div className="image-css">
-
                     <img src={rectangle} alt='Loading...' />
                     <img src={my_img} alt="Loading..." />
                 </div>

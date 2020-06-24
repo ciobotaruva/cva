@@ -1,0 +1,48 @@
+.contact-section, .contact-css, form{
+    display: flex;
+}
+
+.contact-section{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-css{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-css h1{
+    color: #fafafa;
+    font-size: 40px;
+}
+
+form{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+
+input{
+    width: 500px;
+    height: 35px;
+}
+
+textarea{
+    height: 120px;
+    width: 500px;
+}
+
+.contact-css p{
+    color: #fff;
+    width: 500px;
+}
+
+.contact-css span{
+    color:#FFED4F;
+}
+

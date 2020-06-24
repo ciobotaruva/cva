@@ -83,7 +83,7 @@ export default function Navbar() {
     }
 
     useEffect(() => {
-        setInterval(clock, 500);
+        setInterval(clock, 1000);
     }, [])
 
     return (
