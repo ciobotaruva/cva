@@ -113,7 +113,7 @@ export default function Navbar() {
                         className="nav-link"
                         to='/#resume'
                     >
-                        <li>Resume</li>
+                        <li>Experience</li>
                     </Link>
                     <Link
                         className="nav-link"

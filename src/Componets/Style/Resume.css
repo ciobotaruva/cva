@@ -1,0 +1,54 @@
+.resume-section, .experience-css {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-css{
+  width: 40%;
+  height: 90%;
+}
+
+.experience-css h1{
+   font-size: 40px;
+}
+
+.exp{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tata-tech, .it-school, .schaeffler{
+    display: flex;
+}
+
+.experience-css h2{
+    width: 30%;
+    text-decoration: underline #FFED4F;
+}
+
+.experience-css p{
+    width: 80%;
+    text-align: justify;
+}
+
+.exp-details {
+    width: 60%;
+}
+
+.experience-css h3{
+   color:#FFED4F;
+}
+
+.experience-css span{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: initial;
+    
+}
