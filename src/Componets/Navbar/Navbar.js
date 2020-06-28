@@ -92,9 +92,6 @@ export default function Navbar() {
                 <Link
                     className="logo"
                     to='/#home'
-                    smooth={true}
-                    offset={0}
-                    duration={500}
                 >Cva</Link>
                 <ul>
                     <Link

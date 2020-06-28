@@ -79,6 +79,54 @@
     color:#264de4;
 }
 
+@media only screen and (max-width: 600px){
+    .about-container{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-css{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-section h1{
+        font-size: 30px;
+    }
+
+    .about-section p{
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .about-section span{
+        font-size: 14px;
+    }
+
+    .tech-logos{
+        width: 280px;
+        height: 210px;
+    }
+
+    .react-icon, .js-icon, .html-icon, .css-icon{
+        height: 100px;
+        width: 100px;
+    }
+
+    .tech{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .tech li{
+        width: 140px;
+        font-size: 12px;
+    }
+}
 
 
 

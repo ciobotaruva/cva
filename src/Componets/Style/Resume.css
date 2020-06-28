@@ -52,3 +52,16 @@
     font-weight: initial;
     
 }
+
+.resume-section a{
+    border: 1px solid #FFED4F;
+    text-decoration: none;
+    color: #FFED4F;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.resume-section a:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in;
+}

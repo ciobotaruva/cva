@@ -7,9 +7,18 @@
 
 .home-section, .about-section, .portfolio-section, .resume-section, .contact-section{
     height: 100vh;
-    
 }
 
-.home-section,.about-section, .portfolio-section,.portfolio-section,.resume-section,.contact-section {
+.home-section,.about-section ,.portfolio-section,.portfolio-section,.resume-section,.contact-section {
     background-color: #242726;
+}
+
+@media only screen and (max-width: 600px){
+    .home-section, .portfolio-section, .resume-section, .contact-section{
+        height: 100vh;
+    }
+
+    .about-section{
+        height: 125vh;
+    }
 }

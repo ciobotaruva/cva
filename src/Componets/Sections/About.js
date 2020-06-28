@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import '../Style/About.css';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
@@ -6,11 +7,28 @@ import { FaReact, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 
 export default function About() {
 
+    const [aboutData, setAboutData] = useState([]);
+
+    async function getData() {
+        try {
+            const res = await axios('https://my-json-server.typicode.com/ciobotaruva/portfolio-api/about');
+            setAboutData(res.data[0]);
+        } catch (e) {
+            console.warn(e);
+        }
+    }
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    console.log(aboutData);
+
     return (
         <section className='about-section' id='about'>
             <div className='about-container'>
                 <div className="about-css">
-                    <h1>About</h1>
+                    <h1>{aboutData.page_title}</h1>
                     <p>
                         Hello! I'm Valentin, a engineer based in Brasov, Romania.
                     </p>
@@ -23,12 +41,12 @@ export default function About() {
                         Here are a few technologies I've been working with recently:
                     </p>
                     <ul className="tech">
-                        <li>Javascript (ES6)</li>
-                        <li>React</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Github</li>
-                        <li>Figma</li>
+                        <li>{aboutData.tech}</li>
+                        <li>{aboutData.tech_second}</li>
+                        <li>{aboutData.tech_third}</li>
+                        <li>{aboutData.tech_fourth}</li>
+                        <li>{aboutData.tech_fifth}</li>
+                        <li>{aboutData.tech_sixth}</li>
                     </ul>
                 </div>
                 <div className="tech-logos">

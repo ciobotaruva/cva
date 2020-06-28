@@ -35,3 +35,9 @@
     transition: 0.4s ease-in;
     color: #FFED4F;
 }
+
+@media only screen and (max-width: 600px){
+    .social{
+        display: none;
+    }
+}

@@ -63,3 +63,37 @@ button:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in;
 }
+
+@media only screen and (max-width: 600px){
+    .image-css{
+        display: none;
+    }
+
+    .home-css{
+        width: 80%;
+    }
+
+    .home-info h1{
+        font-size: 14px;
+    }
+
+    .home-info h2{
+        font-size: 26px;
+    }
+
+    .home-info h3{
+        font-size: 20px;
+    }
+
+    .home-info p{
+        width: 100%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    button{
+        height: 30px;
+        width: 120px;       
+        font-size: 14px;
+    }
+}
