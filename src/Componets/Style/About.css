@@ -120,10 +120,12 @@
     .tech{
         width: 90%;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .tech li{
-        width: 140px;
+        margin-left: 10px;
+        width: 128px;
         font-size: 12px;
     }
 }

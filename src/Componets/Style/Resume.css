@@ -65,3 +65,35 @@
     transform: scale(1.1);
     transition: 0.4s ease-in;
 }
+
+@media only screen and (max-width: 600px){
+    .experience-css{
+        width: 90%;
+    }
+
+    .experience-css h1{
+        font-size: 30px;
+    }
+
+    .experience-css h2{
+        font-size: 18px;
+    }
+
+    .experience-css h3{
+        font-size: 16px;
+    }
+
+    .experience-css span{
+        font-size: 14px;
+    }
+
+    .experience-css p{
+        font-size: 12px;
+        width: 260px;
+    }
+
+    .resume-section a{
+    
+        padding: 4px 25px;
+    }
+}

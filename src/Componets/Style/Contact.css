@@ -40,9 +40,15 @@ textarea{
 .contact-css p{
     color: #fff;
     width: 500px;
+    text-align: justify;
 }
 
 .contact-css span{
     color:#FFED4F;
 }
 
+@media only screen and (max-width: 600px){
+    input, textarea, .contact-css p{
+        width: 300px;
+    }
+}
