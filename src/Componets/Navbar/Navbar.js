@@ -21,6 +21,12 @@ export default function Navbar() {
         'weather': ''
     });
 
+    function openMenu() {
+        const burger = document.getElementById('menu-container');
+        burger.classList.toggle('open');
+
+    }
+
     function getLocation(position) {
         setLocation({
             'longitude': position.coords.longitude,
@@ -93,7 +99,12 @@ export default function Navbar() {
                     className="logo"
                     to='/#home'
                 >Cva</Link>
-                <ul>
+                <div onClick={openMenu} className="hamburger" id="hamburger">
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                </div>
+                <ul className="menu-container" id="menu-container">
                     <Link
                         className="nav-link"
                         to='/#about'

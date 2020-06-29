@@ -5,7 +5,7 @@
 }
 
 
-.navbar, .logo-nav, ul, .clock-weather, .data, .nav-link {
+.navbar, .logo-nav, ul, .clock-weather, .data, .nav-link, .hamburger {
     display: flex;
 }
 
@@ -84,12 +84,25 @@ ul{
 }
 
 @media only screen and (max-width: 600px){
-    .navbar{
-        width: 90%;
-    }
-    
     .logo-nav{
-        width: 30%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-container{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #313332;
+        display: none;
+    }
+
+    .menu-container.open{
+        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
     }
 
@@ -98,8 +111,28 @@ ul{
         width: 100px;
     }
 
-    ul, .clock-weather{
+    .clock-weather{
         display: none;
     }
 
+    .nav-link{
+        margin-top: 50px;
+        height: 40px;
+    }
+
+    .hamburger{
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        margin-right: 10px;
+        z-index: 2;
+    }
+    
+    .hamburger-line{
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        border-radius: 1px;
+    }
 }
