@@ -12,11 +12,8 @@
     background-color: #242726;
 }
 
-@media only screen and (max-width: 600px){
-    .home-section, .about-section, .portfolio-section, .contact-section{
-        height: 100vh;
-    }
 
+@media only screen and (max-width: 600px){
     .resume-section{
         height: 120vh;
     }

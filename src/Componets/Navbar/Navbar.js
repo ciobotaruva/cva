@@ -22,8 +22,10 @@ export default function Navbar() {
     });
 
     function openMenu() {
-        const burger = document.getElementById('menu-container');
-        burger.classList.toggle('open');
+        const mobileMenu = document.getElementById('menu-container');
+        mobileMenu.classList.toggle('open');
+        const burgerIcon = document.getElementById('hamburger');
+        burgerIcon.classList.toggle('is-open');
 
     }
 
