@@ -32,13 +32,7 @@ export default function Resume() {
                             <h3>{resumeData.company} <span>{resumeData.location}</span></h3>
                             <h4>November 2018  – Present</h4>
                             <p>
-                                Attending the daily meetings, with our clients from the United States, to discuss about the new and ongoing projects.
-                            </p>
-                            <p>
-                                Offering solutions to fit the needs of our client.
-                            </p>
-                            <p>
-                                Managing my ongoing projects.
+                                {resumeData.job_description}
                             </p>
                         </div>
                     </div>
@@ -48,7 +42,7 @@ export default function Resume() {
                             <h3>{resumeData.company_second}<span>{resumeData.location}</span></h3>
                             <h4>November 2019 - April 2020</h4>
                             <p>
-                                HTML, CSS, GITHUB, JavaScript, DOM Manipulation, JQuery, OOP, ES6, React, JSON.
+                                {resumeData.job_description_second}
                             </p>
                         </div>
                     </div>
@@ -58,16 +52,7 @@ export default function Resume() {
                             <h3>{resumeData.company_third} <span>{resumeData.location}</span></h3>
                             <h4>June 2018  – September 2018</h4>
                             <p>
-                                Creating the 3D models and the drawings for the cylindrical roller bearings in CREO 3.
-                            </p>
-                            <p>
-                                Creating and managing the structure of the bearing in PTC Windchill.
-                            </p>
-                            <p>
-                                Checking the drawings for incorrect dimensions, geometric tolerances, standards and notes.
-                            </p>
-                            <p>
-                                Creating the Change folders in SAP.
+                                {resumeData.job_description_third}
                             </p>
                         </div>
                     </div>

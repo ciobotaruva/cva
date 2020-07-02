@@ -119,14 +119,14 @@
     }
 
     .tech{
-        width: 90%;
+        width: 100%;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .tech li{
         margin-left: 10px;
-        width: 128px;
+        width: 110px;
         font-size: 12px;
     }
 }

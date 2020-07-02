@@ -76,6 +76,7 @@
     }
 
     .experience-css h2{
+        width: 100%;
         font-size: 18px;
     }
 
@@ -87,12 +88,21 @@
         font-size: 14px;
     }
 
-    .experience-css p{
+    .exp-details {
         font-size: 12px;
-        width: 240px;
+        width: 100%;
+    }
+
+    .exp-details p{
+        width: 100%;
     }
 
     .resume-section a{
         padding: 4px 25px;
+    }
+    .tata-tech, .it-school, .schaeffler{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 }

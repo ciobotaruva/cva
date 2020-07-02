@@ -138,7 +138,7 @@ ul{
     }
 
     .hamburger.is-open .hamburger-line:nth-child(1){
-     transform: translateY(9.5px) rotate(45deg);
+     transform: translateY(8px) rotate(45deg);
 
     }
 
@@ -147,7 +147,7 @@ ul{
     }
 
     .hamburger.is-open .hamburger-line:nth-child(3){
-        transform:translateY(-9.5px) rotate(-45deg);
+        transform:translateY(-8px) rotate(-45deg);
     }
 
 }
