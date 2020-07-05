@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import '../Style/Home.css';
 import my_img from '../Images/my_img.png';
-import rectangle from '../Images/rectangle.png';
 
 export default function Home() {
 
@@ -34,7 +33,6 @@ export default function Home() {
                     <button>Get In Touch</button>
                 </div>
                 <div className="image-css">
-                    <img src={rectangle} alt='Loading...' />
                     <img src={my_img} alt="Loading..." />
                 </div>
             </div>

@@ -1,66 +1,71 @@
-.about-section{
+.about-section, .about-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
 }
 
 .about-container{
+    max-width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.about-css{
+    height: 70%;
     display: flex;
-    align-items: center;
-    width: 60%;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
-
-.about-section h1{
-    font-size: 40px;
+.about-css h1{
+    color:#fff5f5f5;
+    font-size: 28px;
     text-align: center;
 }
 
-.about-section p{
-    width: 500px;
+.about-css p{
+    color:#fff5f5f5;
+    font-size: 14px;
     text-align: justify;
-    padding: 15px 0;
-    font-size: 17px;
+    margin-top: 18px;
 }
 
-.about-section p:nth-child(4){
+.about-css p:nth-child(4){
+    padding-bottom: 5px;
     border-bottom: 1px solid #FFED4F;
 }
 
-.tech{
+span{
+    color: #FFED4F;
+    font-size: 16px;
+}
+
+.about-css ul{
+    height: 80px;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 500px;
-    height: 100px;
-}
-
-.tech li{
-    width:33.33333333333333%;
-    list-style-position: inside;
-    margin-right: 5px;
-}
-
-.about-css span{
-    color:#FFED4F;
-    font-size: 18px;
+    flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 .tech-logos{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-evenly;
-    align-items: center;
-    width: 400px;
-    height: 400px;
+    margin-top: 35px;
+}
+
+.about-css ul li{
+    width: 100px;
+    color: #fff;
 }
 
 .react-icon, .js-icon, .html-icon, .css-icon{
-    height: 160px;
-    width: 160px;
+    height: 50px;
+    width: 50px;
 }
 
 .react-icon{
@@ -79,57 +84,107 @@
     color:#264de4;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width:768px){
     .about-container{
-        height: 90%;
-        width: 90%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 80%;
+    }
+    
+    .about-css p{
+        font-size: 20px;
+    }
+    
+    span{
+        font-size: 22px;
     }
 
-    .about-css{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .about-css ul{
+        font-size: 21px;
     }
 
-    .about-section h1{
-        font-size: 30px;
+    .react-icon, .js-icon, .html-icon, .css-icon{
+        height: 80px;
+        width: 80px;
     }
 
-    .about-section p{
-        font-size: 12px;
-        width: 90%;
+    .about-css h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .about-container{
+        max-width: 80%;
+    }
+    
+    .about-css p{
+        font-size: 26px;
+    }
+    
+    span{
+        font-size: 28px;
     }
 
-    .about-section span{
-        font-size: 14px;
+    .about-css ul{
+        font-size: 26px;
     }
 
-    .tech-logos{
-        width: 280px;
-        height: 210px;
+    .react-icon, .js-icon, .html-icon, .css-icon{
+        height: 80px;
+        width: 80px;
+    }
+
+    .about-css h1{
+        font-size: 45px;
     }
 
     .react-icon, .js-icon, .html-icon, .css-icon{
         height: 60px;
         width: 60px;
     }
+}
 
-    .tech{
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+@media only screen and (min-width: 1200px){
+    .about-css{
+        height: 100%;
     }
 
-    .tech li{
-        margin-left: 10px;
-        width: 110px;
-        font-size: 12px;
+    .about-container{
+        max-width: 40%;
+    }
+
+    .clock{
+        width: 90px;
+    }    
+
+    .data .clock span{
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .logo{
+        font-size: 36px;
+    }
+
+    .about-css p{
+        font-size: 16px;
+    }
+
+    .about-css ul{
+        font-size: 18px;
     }
 }
 
+@media only screen and (min-width: 1200px){
+    .about-container{
+        max-width: 30%;
+        height: 80%;
+    }
 
-
+    .react-icon, .js-icon, .html-icon, .css-icon{
+        height: 100px;
+        width: 100px;
+    }
+}

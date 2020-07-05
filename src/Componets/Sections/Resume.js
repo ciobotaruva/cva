@@ -32,7 +32,7 @@ export default function Resume() {
                             <h3>{resumeData.company} <span>{resumeData.location}</span></h3>
                             <h4>November 2018  – Present</h4>
                             <p>
-                                {resumeData.job_description}
+                                {resumeData.job_description_third}
                             </p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export default function Resume() {
                             <h3>{resumeData.company_third} <span>{resumeData.location}</span></h3>
                             <h4>June 2018  – September 2018</h4>
                             <p>
-                                {resumeData.job_description_third}
+                                {resumeData.job_description}
                             </p>
                         </div>
                     </div>

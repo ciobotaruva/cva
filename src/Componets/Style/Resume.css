@@ -1,108 +1,180 @@
-.resume-section, .experience-css {
+.resume-section{
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
-    color:#fff;
     font-family: 'Poppins', sans-serif;
 }
 
-.experience-css{
-  width: 40%;
-  height: 90%;
-}
-
-.experience-css h1{
-   font-size: 40px;
-}
-
-.exp{
-    height: 80%;
+.experience-css, .exp{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.tata-tech, .it-school, .schaeffler{
-    display: flex;
+.experience-css{
+    height: 100%;
+    max-width: 90%;
 }
 
-.experience-css h2{
-    width: 30%;
-    text-decoration: underline #FFED4F;
+.experience-css h1{
+    text-align: center;
+    color:#fff5f5f5;
+    font-size: 28px;
 }
 
-.experience-css p{
-    width: 80%;
+.exp{
+    height: 90%;
+}
+
+.exp p{
     text-align: justify;
+    font-size: 14px;
 }
 
-.exp-details {
-    width: 60%;
-}
-
-.experience-css h3{
-   color:#FFED4F;
-}
-
-.experience-css span{
-    color: #fff;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: initial;
-    
-}
-
-.resume-section a{
-    border: 1px solid #FFED4F;
-    text-decoration: none;
+.experience-css a{
+    height: 30px;
+    width: 120px;
+    margin-top: 40px;
+    background-color: #242726;
+    border: 2px solid #FFED4F;
+    border-radius: 6px;
+    font-size: 16px;
     color: #FFED4F;
-    padding: 10px 25px;
-    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
 }
 
-.resume-section a:hover{
-    transform: scale(1.1);
-    transition: 0.4s ease-in;
+.exp h2, h4, p{
+    color:#fff5f5f5;
 }
 
-@media only screen and (max-width: 600px){
+.exp h2{
+    text-decoration: underline #FFED4F;;
+}
+.exp h3{
+    font-weight: 600;
+    color: #FFED4F;
+}
+
+.exp span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+@media only screen and (min-width:768px){
     .experience-css{
-        width: 90%;
+        height: 80%;
+        max-width: 80%;
     }
 
     .experience-css h1{
-        font-size: 30px;
+        font-size: 35px;
     }
 
-    .experience-css h2{
-        width: 100%;
-        font-size: 18px;
+    .experience-css a{
+        height: 42px;
+        width: 180px;
+        font-size: 22px;
+        color: #FFED4F;
+        line-height: 35px;
     }
 
-    .experience-css h3{
+    .exp p{
         font-size: 16px;
     }
 
-    .experience-css span{
-        font-size: 14px;
+    .exp h2{
+        font-size: 26px;
     }
 
-    .exp-details {
-        font-size: 12px;
-        width: 100%;
+    .exp h3{
+        font-size: 22px;
     }
 
-    .exp-details p{
-        width: 100%;
+    .exp h4{
+        font-size: 20px;
+    }
+    
+    .exp span{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .experience-css{
+        height: 80%;
+        max-width: 70%;
     }
 
-    .resume-section a{
-        padding: 4px 25px;
+    .experience-css h1{
+        font-size: 45px;
     }
-    .tata-tech, .it-school, .schaeffler{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+
+    .experience-css a{
+        height: 52px;
+        width: 220px;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .exp p{
+        font-size: 23px;
+    }
+
+    .exp h2{
+        font-size: 35px;
+    }
+
+    .exp h3{
+        font-size: 30px;
+    }
+
+    .exp h4{
+        font-size: 25px;
+    }
+    
+    .exp span{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .experience-css{
+        height: 100%;
+        max-width: 40%;
+    }
+
+    .exp p{
+        font-size: 16px;
+    }
+
+    .exp h2{
+        font-size: 24px;
+    }
+
+    .exp h3{
+        font-size: 22px;
+    }
+
+    .exp h4{
+        font-size: 20px;
+    }
+    
+    .exp span{
+        font-size: 18px;
+    }
+
+    .experience-css a{
+        height: 40px;
+        width: 180px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .experience-css{
+        height: 80%;
+        max-width: 40%;
     }
 }

@@ -1,99 +1,173 @@
 .home-section{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
 }
 
 .home-css{
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
+    max-width: 80%;
 }
 
 .image-css{
-    displa:flex;
-}
-
-.image-css img:nth-child(1){
-    width: 300px;
-    position: absolute;
-}
-
-.image-css img:nth-child(2){
-    width: 300px;
-    position: relative;
-    bottom: 20px;
-    right: 20px;
+    display: none;
 }
 
 .home-info h1{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
     color: #fafafa;
 }
 
 .home-info h2{
-    font-size: 62px;
+    font-weight: normal;
     color:#fff5f5f5;
+    font-weight: bold;
 }
 
 .home-info h3{
-    font-size: 52px;
+    font-weight: normal;
     color:#FFED4F;
+    font-weight: 700;
 }
 
 .home-info p{
-    width: 60%;
     color:#fff5f5f5;
+    font-size: 14px;
 }
-
-button{
-    height: 40px;
-    width: 180px;
+.home-info button{
+    height: 30px;
+    width: 120px;
     margin-top: 40px;
     background-color: #242726;
     border: 2px solid #FFED4F;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 16px;
     color: #FFED4F;
 }
 
-button:hover{
-    transform: scale(1.1);
-    transition: 0.3s ease-in;
-}
-
-@media only screen and (max-width: 600px){
-    .image-css{
-        display: none;
-    }
-
+@media only screen and (min-width: 768px){
     .home-css{
-        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
     }
 
+    .image-css{
+        display: block;
+    }
+    
     .home-info h1{
-        font-size: 14px;
+        font-size: 18px;
     }
-
+    
     .home-info h2{
-        font-size: 26px;
+        font-size: 34px;
     }
-
+    
     .home-info h3{
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .home-info p{
-        width: 100%;
-        font-size: 14px;
+        font-size: 16px;
+        max-width: 350px;
         text-align: justify;
     }
 
-    button{
-        height: 30px;
-        width: 120px;       
-        font-size: 14px;
+    .image-css img{
+        width: 200px;
+    }
+
+    .home-info button{
+        height: 42px;
+        width: 180px;    
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px){    
+    .home-info h1{
+        font-size: 24px;
+    }
+    
+    .home-info h2{
+        font-size: 42px;
+    }
+    
+    .home-info h3{
+        font-size: 38px;
+    }
+
+    .home-info p{
+        font-size: 24px;
+        max-width: 380px;
+        text-align: justify;
+    }
+
+    .image-css img{
+        width: 260px;
+    }
+
+    .home-info button{
+        height: 62px;
+        width: 220px;    
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1200px){    
+    .home-info h1{
+        font-size: 16px;
+    }
+    
+    .home-info h2{
+        font-size: 42px;
+    }
+    
+    .home-info h3{
+        font-size: 32px;
+    }
+
+    .home-info p{
+        font-size: 16px;
+        max-width: 380px;
+        text-align: justify;
+    }
+
+    .image-css img{
+        width: 260px;
+    }
+
+    .home-info button{
+        height: 40px;
+        width: 180px;    
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (min-width: 1800px){    
+    .home-info h1{
+        font-size: 16px;
+    }
+    
+    .home-info h2{
+        font-size: 62px;
+    }
+    
+    .home-info h3{
+        font-size: 52px;
+    }
+
+    .home-info p{
+        max-width: 600px;
+    }
+
+    .image-css img{
+        width: 300px;
     }
 }

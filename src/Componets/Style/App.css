@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 
-.home-section, .about-section, .portfolio-section, .resume-section, .contact-section{
+.home-section, .portfolio-section, .contact-section{
     height: 100vh;
+}
+
+.about-section, .resume-section{
+    height: 145vh;
 }
 
 .home-section,.about-section ,.portfolio-section,.portfolio-section,.resume-section,.contact-section {
     background-color: #242726;
 }
 
-
-@media only screen and (max-width: 600px){
-    .resume-section, .about-section{
-        height: 120vh;
+@media only screen and (min-width: 768px){
+    .about-section, .resume-section{
+        height: 100vh;
     }
 }
