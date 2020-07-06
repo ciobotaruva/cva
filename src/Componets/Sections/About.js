@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import '../Style/About.css';
+import my_img from '../Images/my_img.png';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 
 
@@ -49,12 +50,7 @@ export default function About() {
                         <li>{aboutData.tech_sixth}</li>
                     </ul>
                 </div>
-                <div className="tech-logos">
-                    <FaReact className="react-icon" />
-                    <FaJs className="js-icon" />
-                    <FaHtml5 className="html-icon" />
-                    <FaCss3Alt className="css-icon" />
-                </div>
+                <img src={my_img} alt="Loading..." />
             </div>
         </section>
     )

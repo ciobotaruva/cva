@@ -1,6 +1,7 @@
 .resume-section{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -9,10 +10,9 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .experience-css{
-    height: 70%;
-    max-width: 90%;
+    height: 700px;
+    width: 90%;
 }
 
 .experience-css h1{
@@ -22,12 +22,12 @@
 }
 
 .exp{
-    height: 90%;
+    height: 600px;
 }
 
 .exp p{
     text-align: justify;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .experience-css a{
@@ -43,14 +43,16 @@
     text-decoration: none;
 }
 
-.exp h2, h4, p{
+.exp h2, h4, p{ 
     color:#fff5f5f5;
 }
 
 .exp h2{
+    font-size: 20px;
     text-decoration: underline #FFED4F;;
 }
 .exp h3{
+    font-size: 16px;
     font-weight: 600;
     color: #FFED4F;
 }

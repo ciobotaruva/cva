@@ -8,11 +8,14 @@
     height: 100vh;
 }
 
-.about-section, .resume-section{
-    height: 145vh;
+.about-section{
+    height: 115vh;
+}
+.resume-section{
+    height: 140vh;
 }
 
-.home-section,.about-section ,.portfolio-section,.portfolio-section,.resume-section,.contact-section {
+.home-section, .about-section, .portfolio-section,.portfolio-section,.resume-section,.contact-section {
     background-color: #242726;
 }
 

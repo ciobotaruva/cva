@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60%;
+    height: 80%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,22 +24,22 @@ form{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 80%;
+    height: 280px;
 }
 
 input{
-    width: 300px;
+    width: 250px;
     height: 25px;
 }
 
 textarea{
     height: 100px;
-    width: 300px;
+    width: 250px;
 }
 
 .contact-css p{
     color: #fff;
-    width: 300px;
+    width: 250px;
     text-align: justify;
     margin-top: 10px;
 }
@@ -87,5 +87,5 @@ textarea{
     textarea{
         height: 150px;
         width: 500px;
-    }
+    } 
 }
