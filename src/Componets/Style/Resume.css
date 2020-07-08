@@ -105,7 +105,7 @@
 
 @media only screen and (min-width:992px){
     .experience-css{
-        height: 100%;
+        height: 70%;
         max-width: 70%;
     }
 
@@ -121,38 +121,11 @@
     }
 
     .exp p{
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .exp h2{
-        font-size: 35px;
-    }
-
-    .exp h3{
-        font-size: 30px;
-    }
-
-    .exp h4{
-        font-size: 25px;
-    }
-    
-    .exp span{
-        font-size: 25px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .experience-css{
-        height: 100%;
-        max-width: 40%;
-    }
-
-    .exp p{
-        font-size: 16px;
-    }
-
-    .exp h2{
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .exp h3{
@@ -164,19 +137,30 @@
     }
     
     .exp span{
-        font-size: 18px;
-    }
-
-    .experience-css a{
-        height: 40px;
-        width: 180px;
         font-size: 20px;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+    .experience-css{
+        height: 100%;
+        max-width: 50%;
+    }
+    
+    .exp{
+        height: 60%;
+    }
+
+    
 }
 
 @media only screen and (min-width: 1800px) {
     .experience-css{
         height: 80%;
         max-width: 40%;
+    }
+
+    .exp{
+        height: 80%;
     }
 }

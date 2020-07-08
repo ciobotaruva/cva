@@ -1,7 +1,43 @@
-.portfolio-css {
-    width: 95%;
+.portfolio-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-css {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aqua;    */
+    width: 96%;
+}
+
+.portfolio-css h1{
+    font-size: 28px;
+    color: #fff5f5f5;
+    text-align: center;
+}
+
+.img-links{
+    margin-top: 50px;
+    height: 200px;
+    background-image: url('../Images/project_one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.portfolio-css .project-one-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    color: #FFED4F;
+}
+
+.project-details p{
+    text-align: justify;
+    font-size: 14px;
 }

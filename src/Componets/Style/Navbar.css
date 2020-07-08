@@ -124,6 +124,10 @@ ul{
 }
 
 @media only screen and (min-width: 768px){
+    .navbar{
+        z-index: 2;
+    }
+
     .clock-weather{
         display: inline-block;
         position: fixed;
@@ -136,7 +140,6 @@ ul{
     }
 
     .data{
-        display: flex;
         justify-content: space-evenly;
     }
 

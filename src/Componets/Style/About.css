@@ -7,13 +7,13 @@
 
 .about-container{
     width: 90%;
-    height: 90%;
+    height: 60%;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .about-container img{
-    width: 120px;
+    width: 30%;
 }
 
 .about-css{
@@ -21,6 +21,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+
+.about-css p:nth-child(4){
+   border-bottom:2px solid #FFED4F;;
 }
 
 .about-css h1{
@@ -77,10 +82,6 @@ span{
     .about-css h1{
         font-size: 35px;
     }
-
-    .about-container img{
-        width: 250px;
-    }
 }
 
 @media only screen and (min-width:992px){
@@ -92,20 +93,16 @@ span{
       height: 800px;
     }
 
-    .about-container img{
-        width: 250px;
-    }
-    
     .about-css p{
-        font-size: 26px;
+        font-size: 18px;
     }
     
     span{
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .about-css ul{
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .about-css h1{
@@ -115,11 +112,14 @@ span{
 
 @media only screen and (min-width: 1200px){
     .about-css{
-        height: 100%;
+        height: 600px;
+        width: 40%;
     }
 
     .about-container{
-        max-width: 80%;
+        width: 80%;
+        height: 90%;
+        flex-direction: row;
     }
 
     .clock{
@@ -145,21 +145,9 @@ span{
     .about-css ul{
         font-size: 16px;
     }
-}
-
-@media only screen and (min-width: 1200px){
-    .about-container{
-        max-width: 50%;
-        height: 90%;
-        flex-direction: row;
-    }
-
-    .about-css{
-        height: 700px;
-        width: 50%;
-    }
 
     .about-container img{
-        width: 250px;
+        width: 20%;
     }
 }
+

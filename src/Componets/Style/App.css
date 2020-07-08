@@ -4,18 +4,23 @@
     box-sizing: border-box;
 }
 
-.home-section, .portfolio-section, .contact-section{
+.home-section, .contact-section,.resume-section{
     height: 100vh;
 }
 
 .about-section{
     height: 115vh;
 }
-.resume-section{
-    height: 140vh;
+
+.portfolio-section{
+    height: 200vh;
 }
 
-.home-section, .about-section, .portfolio-section,.portfolio-section,.resume-section,.contact-section {
+.resume-section{
+    height: 125vh;
+}
+
+.home-section, .about-section,.resume-section,.contact-section, .portfolio-section {
     background-color: #242726;
 }
 

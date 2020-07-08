@@ -50,8 +50,13 @@ textarea{
 
 @media only screen and (min-width:768px){
     .contact-css{
-        height: 50%;
+        height: 60%;
     }
+
+    form{
+        height: 60%;
+    }
+
 
     .contact-css p{
         font-size: 18px;
@@ -70,10 +75,6 @@ textarea{
 }
 
 @media only screen and (min-width:1200px){
-    .contact-css{
-        height: 60%;
-    }
-
     .contact-css p{
         font-size: 18px;
         width: 500px;
