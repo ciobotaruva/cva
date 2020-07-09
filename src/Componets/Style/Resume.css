@@ -83,23 +83,23 @@
     }
 
     .exp p{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .exp h2{
-        font-size: 26px;
-    }
-
-    .exp h3{
         font-size: 22px;
     }
 
+    .exp h3{
+        font-size: 18px;
+    }
+
     .exp h4{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .exp span{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 

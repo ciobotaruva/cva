@@ -64,19 +64,19 @@ span{
 @media only screen and (min-width:768px){
     .about-container{
         height: 100%;
-        max-width: 80%;
+        max-width: 60%;
     }
     
     .about-css p{
-        font-size: 20px;
+        font-size: 16px;
     }
     
     span{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .about-css ul{
-        font-size: 21px;
+        font-size: 16px;
     }
 
     .about-css h1{

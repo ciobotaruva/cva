@@ -39,7 +39,7 @@ export default function Resume() {
                     <div className='it-school'>
                         <h2>{resumeData.job_title_second}</h2>
                         <div className="exp-details">
-                            <h3>{resumeData.company_second}<span>{resumeData.location}</span></h3>
+                            <h3>{resumeData.company_second} <span>{resumeData.location}</span></h3>
                             <h4>November 2019 - April 2020</h4>
                             <p>
                                 {resumeData.job_description_second}
