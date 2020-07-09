@@ -13,7 +13,7 @@
 .portfolio-css {
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 96%;
     max-width: 90%;
 }
