@@ -6,10 +6,12 @@
 }
 
 .about-container{
+    margin-top: 50px;
     width: 90%;
     height: 60%;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 .about-container img{

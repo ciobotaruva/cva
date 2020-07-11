@@ -1,166 +1,48 @@
+.resume-section, .experience-container{
+    display: flex;
+}
+
 .resume-section{
-    display: flex;
     justify-content: center;
-    align-items: center;
     font-family: 'Poppins', sans-serif;
+    align-items: flex-start;
 }
 
-.experience-css, .exp{
-    display: flex;
+.experience-container{
+    margin-top: 100px;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-.experience-css{
-    height: 700px;
-    width: 90%;
+    justify-content: center;
+    position: absolute;
+    max-width: 400px;
+    padding: 0 10px;
 }
 
-.experience-css h1{
+.resume-section h1{
     text-align: center;
-    color:#fff5f5f5;
-    font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    color:  #fff5f5f5;
 }
 
-.exp{
-    height: 600px;
-}
-
-.exp p{
+.resume-section p{
     text-align: justify;
-    font-size: 12px;
+    color:  #fff5f5f5;
+    font-size: 14px;
+}
+.resume-section h3,h2{
+    color:  #fff5f5f5;
 }
 
-.experience-css a{
-    height: 30px;
-    width: 120px;
-    margin-top: 40px;
-    background-color: #242726;
-    border: 2px solid #FFED4F;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #FFED4F;
-    text-align: center;
+.job-nav nav ul{
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.job-nav nav ul li{
+    width: 100px;
     text-decoration: none;
-}
-
-.exp h2, h4, p{ 
-    color:#fff5f5f5;
-}
-
-.exp h2{
-    font-size: 20px;
-    text-decoration: underline #FFED4F;;
-}
-.exp h3{
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFED4F;
-}
-
-.exp span{
+    list-style: none;
     color: #fff;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: italic;
-}
-
-@media only screen and (min-width:768px){
-    .experience-css{
-        height: 80%;
-        max-width: 80%;
-    }
-
-    .experience-css h1{
-        font-size: 35px;
-    }
-
-    .experience-css a{
-        height: 42px;
-        width: 180px;
-        font-size: 22px;
-        color: #FFED4F;
-        line-height: 35px;
-    }
-
-    .exp p{
-        font-size: 14px;
-    }
-
-    .exp h2{
-        font-size: 22px;
-    }
-
-    .exp h3{
-        font-size: 18px;
-    }
-
-    .exp h4{
-        font-size: 18px;
-    }
-    
-    .exp span{
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width:992px){
-    .experience-css{
-        height: 70%;
-        max-width: 70%;
-    }
-
-    .experience-css h1{
-        font-size: 45px;
-    }
-
-    .experience-css a{
-        height: 52px;
-        width: 220px;
-        font-size: 26px;
-        line-height: 40px;
-    }
-
-    .exp p{
-        font-size: 18px;
-    }
-
-    .exp h2{
-        font-size: 26px;
-    }
-
-    .exp h3{
-        font-size: 22px;
-    }
-
-    .exp h4{
-        font-size: 20px;
-    }
-    
-    .exp span{
-        font-size: 20px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .experience-css{
-        height: 100%;
-        max-width: 50%;
-    }
-    
-    .exp{
-        height: 60%;
-    }
-
-    
-}
-
-@media only screen and (min-width: 1800px) {
-    .experience-css{
-        height: 80%;
-        max-width: 40%;
-    }
-
-    .exp{
-        height: 80%;
-    }
 }

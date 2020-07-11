@@ -23,8 +23,6 @@ export default function About() {
         getData();
     }, []);
 
-    console.log(aboutData);
-
     return (
         <section className='about-section' id='about'>
             <div className='about-container'>

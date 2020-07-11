@@ -11,25 +11,24 @@
 .navbar{
     position:fixed;
     top: 0;
-    height: 6vh;
+    height: 60px;
     width: 100%;
     background-color: #242726;
     font-family: 'Poppins', sans-serif;
+    z-index: 2;
 }
 
 .logo-nav{
     align-items: center;
-    width: 50%;
     height: 100%;
-    justify-content: space-between;
 }
 
 .logo{
-    width: 30%;
+    width: 80px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     color: #FFED4F;
 }
@@ -48,6 +47,8 @@ ul{
     font-size: 18px;
     align-items: center;
     height: 100%;
+    margin-top: 50px;
+    height: 40px;
 }
 
 .nav-link li{
@@ -79,18 +80,8 @@ ul{
     justify-content: flex-start;
 }
 
-.logo{
-    font-size: 25px;
-    width: 80px;
-}
-
 .clock-weather{
     display: none;
-}
-
-.nav-link{
-    margin-top: 50px;
-    height: 40px;
 }
 
 .hamburger{
@@ -131,9 +122,9 @@ ul{
     .clock-weather{
         display: inline-block;
         position: fixed;
-        line-height: 6vh;
         top: 0;
-        height: 6vh;
+        height: 60px;
+        line-height: 60px;
         right: 100px;
         width: 400px;
         z-index: -1;
@@ -141,6 +132,7 @@ ul{
 
     .data{
         justify-content: space-evenly;
+        height: 50px;
     }
 
     .clock{
@@ -158,10 +150,11 @@ ul{
     }
 
     .logo{
-        height: 80%;
-        width: 50%;
+        height: 100%;
+        width: 60px;
         line-height: 60px;
-        font-size: 35px;
+        font-size: 25px;
+        padding-left: 4px;
     }
 }
 
@@ -179,7 +172,8 @@ ul{
     }
 
     .logo{
-        font-size: 45px;
+        width: 85px;
+        font-size: 30px;
     }
 }
 
