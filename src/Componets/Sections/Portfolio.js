@@ -33,7 +33,7 @@ export default function Portofolio() {
                         </ul>
                     </div>
                     <div className="project-buttons">
-                        <a href="https://github.com/ciobotaruva/Final-project" target='_blank' rel="noopener noreferrer">
+                        <a href="https://github.com/ciobotaruva/Final-project" target='_blank' rel="noopener noreferrer" disabled>
                             <FaGithubSquare className='project-icon' />
                         </a>
                         <a href="..." target="_blank">Preview</a>

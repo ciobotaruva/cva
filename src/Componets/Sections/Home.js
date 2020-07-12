@@ -26,7 +26,7 @@ export default function Home() {
         <section className="home-section" id="home">
             <div className="home-css">
                 <div className="home-info">
-                    <h1>Hi my name is,</h1>
+                    <h1>Hello my name is,</h1>
                     <h2>{dataHome.name}</h2>
                     <h2>{dataHome.last_name}</h2>
                     <h3>{dataHome.job}</h3>

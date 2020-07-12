@@ -1,48 +1,98 @@
-.resume-section, .experience-container{
-    display: flex;
-}
-
 .resume-section{
+    display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    align-items: flex-start;
 }
 
 .experience-container{
-    margin-top: 100px;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    max-width: 400px;
-    padding: 0 10px;
-}
-
-.resume-section h1{
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 25px;
-    color:  #fff5f5f5;
-}
-
-.resume-section p{
-    text-align: justify;
-    color:  #fff5f5f5;
-    font-size: 14px;
-}
-.resume-section h3,h2{
-    color:  #fff5f5f5;
-}
-
-.job-nav nav ul{
-    padding-bottom: 10px;
-    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 80%;
+    margin-top: 100px;
 }
 
-.job-nav nav ul li{
-    width: 100px;
-    text-decoration: none;
-    list-style: none;
+.job-card{
+    margin-top: 50px;
+}
+
+.experience-container h1{
+    text-align: center;
+    font-size: 28px;
+    color: #fff5f5f5;
+}
+
+.job-card h2{
+   color: #fff;
+}
+
+.job-card h3{
+    color: #FFED4F;
+}
+
+.job-card h4{
     color: #fff;
+}
+
+.job-card p{
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+}
+
+.experience-container a{
+    border:1px solid #FFED4F;
+    text-decoration: none;
+    color: #FFED4F;
+    width: 100px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 6px;
+}
+
+@media only screen and (min-width:768px){
+    .experience-container{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .experience-container{
+        max-width: 50%;
+    }
+
+    .experience-container h1{
+        text-align: center;
+        font-size: 45px;
+        color: #fff5f5f5;
+    }
+
+    .job-card p{
+        font-size: 14px;
+    }
+
+    .experience-container a{
+        font-size: 20px;
+    }
+}   
+
+@media only screen and (min-width: 1200px){
+    .experience-container{
+        max-width: 30%;
+    }
+
+    .job-card h2{
+        font-size: 26px;
+     }
+     
+     .job-card h3{
+         font-size: 22px;
+     }
+     
+     .job-card h4{
+         color: #fff;
+     }
+
+    .job-card p{
+        font-size: 16px;
+    }
 }
