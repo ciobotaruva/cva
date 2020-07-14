@@ -11,3 +11,15 @@
 .app {
     background-color: #242726;
 }
+
+.footer {
+height: 30px;
+}
+
+.footer p{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #FFED4F;
+    font-style: italic;
+}

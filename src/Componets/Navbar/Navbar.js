@@ -18,7 +18,8 @@ export default function Navbar() {
     const [weather, setWeather] = useState({
         'city': '',
         'temp': '',
-        'weather': ''
+        'weather': '',
+        'id': ''
     });
 
     function openMenu() {
@@ -55,15 +56,19 @@ export default function Navbar() {
             setWeather({
                 'city': res.data.name,
                 'temp': calculateCelsius(res.data.main.temp),
-                'weather': res.data.weather[0].main
-            })
+                'weather': res.data.weather[0].main,
+                'id': res.data.weather[0].icon,
+            });
+            console.log(res.data);
         } catch (e) {
             console.warn(e);
         }
     }
 
+
+
     useEffect(() => {
-        getWeather()
+        getWeather();
     }, [location.longitude]);
 
     function showError(error) {
@@ -140,7 +145,7 @@ export default function Navbar() {
                     </div>
                     <span>{weather.city}</span>
                     <span>{weather.temp}&#8451;</span>
-                    <span>{weather.weather}</span>
+                    <img src={`http://openweathermap.org/img/wn/${weather.id}@2x.png`} alt='Loading....' />
                 </div>
             </div>
         </div>

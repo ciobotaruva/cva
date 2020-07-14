@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import { aboutUrl } from '../config';
 import '../Style/About.css';
 import my_img from '../Images/my_img.png';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
-
 
 export default function About() {
 
@@ -12,7 +11,7 @@ export default function About() {
 
     async function getData() {
         try {
-            const res = await axios('https://my-json-server.typicode.com/ciobotaruva/portfolio-api/about');
+            const res = await axios(aboutUrl);
             setAboutData(res.data[0]);
         } catch (e) {
             console.warn(e);

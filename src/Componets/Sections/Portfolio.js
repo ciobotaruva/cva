@@ -36,7 +36,7 @@ export default function Portofolio() {
                         <a href="https://github.com/ciobotaruva/Final-project" target='_blank' rel="noopener noreferrer" disabled>
                             <FaGithubSquare className='project-icon' />
                         </a>
-                        <a href="..." target="_blank">Preview</a>
+                        <a target="_blank" disabled>Preview</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@ export default function Portofolio() {
                         <a href="https://github.com/ciobotaruva/cva-portfolio" target='_blank' rel="noopener noreferrer">
                             <FaGithubSquare className='project-icon' />
                         </a>
-                        <a href="https://ciobotaru.netlify.app/" target="_blank">Preview</a>
+                        <a href="https://ciobotaru.netlify.app/" target="_blank" rel="noopener noreferrer">Preview</a>
                     </div>
                 </div>
             </div>

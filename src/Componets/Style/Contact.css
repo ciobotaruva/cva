@@ -31,12 +31,21 @@ form{
 
 input{
     width: 250px;
-    height: 25px;
+    height: 20px;
 }
 
 textarea{
     height: 60px;
     width: 250px;
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #FFED4F;
+    color: #FFED4F;
+    border-radius: 6px;
+    background-color: #242726;
 }
 
 .contact-css p{
@@ -82,6 +91,10 @@ textarea{
 }
 
 @media only screen and (min-width:1200px){
+    .contact-css h1{
+        font-size: 45px;
+    }
+
     .contact-css p{
         font-size: 18px;
         width: 500px;

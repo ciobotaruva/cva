@@ -8,6 +8,7 @@ import Portfolio from './Sections/Portfolio';
 import Resume from './Sections/Resume';
 import Contact from './Sections/Contact';
 import Social from './Sections/Social';
+import Footer from './Sections/Footer';
 
 import '../Componets/Style/App.css';
 
@@ -26,6 +27,7 @@ export default function App() {
                 <Portfolio exact path='portfolio' component={Portfolio} />
                 <Resume exact path='resume' component={Resume} />
                 <Contact exact path='contact' component={Contact} />
+                <Footer />
             </div>
         </BrowserRouter>
     )

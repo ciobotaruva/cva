@@ -130,6 +130,12 @@ ul{
         z-index: -1;
     }
 
+    .clock-weather img{
+        padding-top: 5px;
+        width: 60px;
+    }
+
+
     .data{
         justify-content: space-evenly;
         height: 50px;

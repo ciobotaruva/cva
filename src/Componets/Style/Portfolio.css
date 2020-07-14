@@ -22,6 +22,7 @@
     font-size: 28px;
     color: #fff5f5f5;
     text-align: center;
+    padding-top: 100px;
 }
 
 .project-card{
@@ -56,6 +57,7 @@ text-decoration: underline #FFED4F;
 
 .project-card img{
     width: 100%;
+    margin-top: 20px;
 }
 
 .project-icon{
@@ -100,10 +102,6 @@ text-decoration: underline #FFED4F;
 
     .portfolio-css h1{
         font-size: 45px;
-    }
-
-    .project-card img{
-        margin-top: 20px;
     }
 
     .project-card h2{

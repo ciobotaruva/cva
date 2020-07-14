@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import { homeUrl } from '../config';
 import '../Style/Home.css';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
 
@@ -11,7 +12,7 @@ export default function Home() {
 
     async function getData() {
         try {
-            let res = await axios('https://my-json-server.typicode.com/ciobotaruva/portfolio-api/home');
+            let res = await axios(homeUrl);
             setDataHome(res.data[0]);
         } catch (e) {
             console.warn(e);
@@ -31,7 +32,6 @@ export default function Home() {
                     <h2>{dataHome.last_name}</h2>
                     <h3>{dataHome.job}</h3>
                     <p>{dataHome.description}</p>
-                    <button>Get In Touch</button>
                 </div>
                 <div className="cube-container">
                     <div className="cube">
