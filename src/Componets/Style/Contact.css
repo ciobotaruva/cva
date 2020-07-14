@@ -39,13 +39,17 @@ textarea{
     width: 250px;
 }
 
-form button {
-    width: 100px;
-    height: 30px;
+.contact-css a {
+    width: 140px;
+    height: 40px;
     border: 1px solid #FFED4F;
     color: #FFED4F;
     border-radius: 6px;
     background-color: #242726;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    margin-top: 50px;
 }
 
 .contact-css p{
