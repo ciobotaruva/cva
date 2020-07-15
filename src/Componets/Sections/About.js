@@ -39,9 +39,9 @@ export default function About() {
                         Here are a few technologies I've been working with recently:
                     </p>
                     <ul className="tech">
+                        <li>{aboutData.tech_third}</li>
                         <li>{aboutData.tech}</li>
                         <li>{aboutData.tech_second}</li>
-                        <li>{aboutData.tech_third}</li>
                         <li>{aboutData.tech_fourth}</li>
                         <li>{aboutData.tech_fifth}</li>
                         <li>{aboutData.tech_sixth}</li>

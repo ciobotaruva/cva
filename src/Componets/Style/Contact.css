@@ -19,25 +19,9 @@
 
 .contact-css h1{
     color: #fafafa;
-    font-size: 40px;
+    font-size: 25px;
 }
 
-form{
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 280px;
-}
-
-input{
-    width: 250px;
-    height: 20px;
-}
-
-textarea{
-    height: 60px;
-    width: 250px;
-}
 
 .contact-css a {
     width: 140px;
@@ -60,12 +44,11 @@ textarea{
     font-size: 14px;
 }
 
-.contact-css h1{
-    font-size: 25px;
-}
-
-.contact-css span{
-    color:#FFED4F;
+.contact-icons {
+    height: 10px;
+    width: 10px;
+    color: #FFED4F;
+    margin-right: 10px;
 }
 
 @media only screen and (min-width:768px){
@@ -73,23 +56,8 @@ textarea{
         height: 500px;
     }
 
-    form{
-        height: 80%;
-    }
-
-
     .contact-css p{
         font-size: 18px;
-        width: 500px;
-    }
-
-    input{
-        width: 500px;
-        height: 30px;
-    }
-    
-    textarea{
-        height: 150px;
         width: 500px;
     }
 }

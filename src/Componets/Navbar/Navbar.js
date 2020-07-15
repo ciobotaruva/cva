@@ -2,17 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import axios from 'axios';
 
+import { weatherUrl } from '../config';
 import '../Style/Navbar.css';
 
 export default function Navbar() {
 
     const [time, setTime] = useState({
         'time': ''
-    });
-
-    const [location, setLocation] = useState({
-        'longitude': '',
-        'latitude': ''
     });
 
     const [weather, setWeather] = useState({
@@ -30,21 +26,6 @@ export default function Navbar() {
 
     }
 
-    function getLocation(position) {
-        setLocation({
-            'longitude': position.coords.longitude,
-            'latitude': position.coords.latitude
-        })
-    }
-
-    useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(getLocation, showError);
-        } else {
-            alert('Geolocation is not supported by this browser!')
-        }
-    });
-
     function calculateCelsius(temp) {
         const tempCelsius = Math.floor(temp - 273.1);
         return tempCelsius;
@@ -52,7 +33,7 @@ export default function Navbar() {
 
     async function getWeather() {
         try {
-            const res = await axios(`https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=081d50bc5ecfaa4fedc4826c07da4611`);
+            const res = await axios(weatherUrl);
             setWeather({
                 'city': res.data.name,
                 'temp': calculateCelsius(res.data.main.temp),
@@ -65,28 +46,10 @@ export default function Navbar() {
         }
     }
 
-
-
     useEffect(() => {
         getWeather();
-    }, [location.longitude]);
+    }, []);
 
-    function showError(error) {
-        switch (error.code) {
-            case error.PERMISSION_DENIED:
-                alert("User denied the request for Geolocation.");
-                break;
-            case error.POSITION_UNAVAILABLE:
-                alert("Location information is unavailable.");
-                break;
-            case error.TIMEOUT:
-                alert("The request to get user location timed out.");
-                break;
-            case error.UNKNOWN_ERROR:
-                alert("An unknown error occurred.");
-                break;
-        }
-    }
 
     function clock() {
         const theTime = new Date();
