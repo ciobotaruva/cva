@@ -111,7 +111,11 @@
     color:#264de4;
 }
 
-.react-icon, .js-icon, .html-icon, .css-icon, .github-icon{
+.node-icon{
+    color:#68A063;
+}
+
+.react-icon, .js-icon, .html-icon, .css-icon, .github-icon, .node-icon{
     height: 50px;
     width: 50px;
 }
@@ -145,7 +149,7 @@
     .cube .side5 { transform: rotateX(90deg) translateZ(80px); }
     .cube .side6 { transform: rotateX(-90deg) translateZ(80px); }
 
-    .react-icon, .js-icon, .html-icon, .css-icon, .github-icon{
+    .react-icon, .js-icon, .html-icon, .css-icon, .github-icon, .node-icon{
         height: 80px;
         width: 80px;
     }
@@ -273,7 +277,7 @@
     .cube .side5 { transform: rotateX(90deg) translateZ(150px); }
     .cube .side6 { transform: rotateX(-90deg) translateZ(150px); }
 
-    .react-icon, .js-icon, .html-icon, .css-icon, .github-icon{
+    .react-icon, .js-icon, .html-icon, .css-icon, .github-icon, .node-icon{
         height: 150px;
         width: 150px;
     }

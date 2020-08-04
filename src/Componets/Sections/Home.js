@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { homeUrl } from '../config';
 import '../Style/Home.css';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGithub, FaNode } from "react-icons/fa";
 
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
                         <div className="side3 logo-cube"><FaHtml5 className="html-icon" /></div>
                         <div className="side4 logo-cube"><FaCss3Alt className="css-icon" /></div>
                         <div className="side5 logo-cube"><FaGithub className="github-icon" /></div>
-                        <div className="side6 logo-cube">Web Developer</div>
+                        <div className="side6 logo-cube"><FaNode className="node-icon" /></div>
                     </div>
                 </div>
             </div>
