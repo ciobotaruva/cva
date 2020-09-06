@@ -23,8 +23,8 @@ export default function App() {
                 <Navbar />
                 <Social />
                 <Home exact path='home' component={Home} />
-                <About exact path='about' component={About} />
                 <Portfolio exact path='portfolio' component={Portfolio} />
+                <About exact path='about' component={About} />
                 <Resume exact path='resume' component={Resume} />
                 <Contact exact path='contact' component={Contact} />
                 <Footer />

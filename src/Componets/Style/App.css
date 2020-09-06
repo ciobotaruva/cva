@@ -4,22 +4,26 @@
     box-sizing: border-box;
 }
 
-.home-section, .contact-section,  .portfolio-section, .resume-section, .about-section{
+.home__section, 
+.contact__section, 
+.portfolio__section, 
+.resume__section, 
+.about__section{
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .app {
-    background-color: #242726;
+    background-color: #FAFAFA;
 }
 
 .footer {
-height: 30px;
+    height: 30px;
 }
 
 .footer p{
     text-align: center;
     height: 30px;
     line-height: 30px;
-    color: #FFED4F;
     font-style: italic;
 }

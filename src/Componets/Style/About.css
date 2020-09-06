@@ -1,155 +1,50 @@
-.about-section, .about-container{
+.about__section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
 
-.about-container{
-    margin-top: 50px;
-    width: 90%;
-    height: 60%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-
-.about-container img{
-    width: 150px;
-}
-
-.about-css{
-    height: 550px;
+.about__container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 96px;
 }
 
-
-.about-css p:nth-child(4){
-   border-bottom:2px solid #FFED4F;
+.about__style{
+    max-width: 600px;
 }
 
-.about-css h1{
-    color:#fff5f5f5;
-    font-size: 28px;
+.about__style > h1{
     text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #3f729b;
 }
 
-.about-css p{
-    color:#fff5f5f5;
-    font-size: 12px;
+.about__style > p{
     text-align: justify;
-}
-
-span{
-    color: #FFED4F;
     font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0;
 }
 
-.about-css ul{
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
+.about__style span{
+    font-size-adjust: 18px;
+    color: #3f729b;
+    text-decoration: underline;
+}
+
+.about__style p:nth-of-type(3){
+    border-bottom: 1px solid #3f729b;
+}
+
+.about__tech{
+    margin-left: 30px;
+    color: #3f729b;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
     font-size: 14px;
     margin-top: 20px;
 }
-
-.about-css ul li{
-    width: 100px;
-    color: #fff;
-}
-
-
-@media only screen and (min-width:768px){
-    .about-container{
-        height: 100%;
-        max-width: 60%;
-    }
-    
-    .about-css p{
-        font-size: 16px;
-    }
-    
-    span{
-        font-size: 18px;
-    }
-
-    .about-css ul{
-        font-size: 16px;
-    }
-
-    .about-css h1{
-        font-size: 35px;
-    }
-}
-
-@media only screen and (min-width:992px){
-    .about-container{
-        max-width: 80%;
-    }
-
-    .about-css{
-      height: 800px;
-    }
-
-    .about-css p{
-        font-size: 18px;
-    }
-    
-    span{
-        font-size: 20px;
-    }
-
-    .about-css ul{
-        font-size: 18px;
-    }
-
-    .about-css h1{
-        font-size: 45px;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .about-css{
-        height: 600px;
-        width: 40%;
-    }
-
-    .about-container{
-        width: 80%;
-        height: 90%;
-        flex-direction: row;
-    }
-
-    .clock{
-        width: 90px;
-    }    
-
-    .data .clock span{
-        font-size: 18px;
-    }
-
-    span {
-        font-size: 18px;
-    }
-
-    .logo{
-        font-size: 36px;
-    }
-
-    .about-css p{
-        font-size: 16px;
-    }
-
-    .about-css ul{
-        font-size: 16px;
-    }
-
-    .about-container img{
-        width: 20%;
-    }
-}
-

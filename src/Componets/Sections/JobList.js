@@ -17,8 +17,8 @@ export default function JobList() {
     }, [])
 
     return (
-        <div>
-            {jobs.map(job => <JobDetails job={job} key={job.id} />)}
+        <div className="resume__list">
+            {jobs.map(job => <JobDetails job={job} key={job._id} />)}
         </div>
     )
 }

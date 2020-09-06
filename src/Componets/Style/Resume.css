@@ -1,98 +1,47 @@
-.resume-section{
+.resume__section{
     display: flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    
 }
 
-.experience-container{
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin-top: 100px;
+.resume__container{
+    max-width: 280px;
+    margin-top: 96px;
+    
 }
 
-.job-card{
-    margin-top: 50px;
-}
-
-.experience-container h1{
+.resume__container > h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: #3f729b;
     text-align: center;
-    font-size: 28px;
-    color: #fff5f5f5;
 }
 
-.job-card h2{
-   color: #fff;
+.resume__card{
+    margin-bottom: 20px;
 }
 
-.job-card h3{
-    color: #FFED4F;
+.resume__card > h2{
+    color: #3f729b;
 }
 
-.job-card h4{
-    color: #fff;
+.resume__card > h4{
+    font-style: italic;
 }
 
-.job-card p{
-    font-size: 14px;
-    color: #fff;
-    text-align: justify;
+.resume__container > a{
+    text-decoration:none;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    font-size:16px;
+    padding: 0 10px;
+    border: 1px #000 solid;
+    border-radius: 4px;
 }
 
-.experience-container a{
-    border:1px solid #FFED4F;
-    text-decoration: none;
-    color: #FFED4F;
-    width: 100px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 6px;
-}
-
-@media only screen and (min-width:768px){
-    .experience-container{
-        max-width: 60%;
-    }
-}
-
-@media only screen and (min-width: 992px){
-    .experience-container{
-        max-width: 50%;
-    }
-
-    .experience-container h1{
-        text-align: center;
-        font-size: 45px;
-        color: #fff5f5f5;
-    }
-
-    .job-card p{
-        font-size: 14px;
-    }
-
-    .experience-container a{
-        font-size: 20px;
-    }
-}   
-
-@media only screen and (min-width: 1200px){
-    .experience-container{
-        max-width: 30%;
-    }
-
-    .job-card h2{
-        font-size: 26px;
-     }
-     
-     .job-card h3{
-         font-size: 22px;
-     }
-     
-     .job-card h4{
-         color: #fff;
-     }
-
-    .job-card p{
-        font-size: 16px;
-    }
+.resume__container > a:hover{
+    color: #3f729b;
+    border: 1px  #3f729b solid;
 }

@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import { aboutUrl } from '../config';
 import '../Style/About.css';
-import my_img from '../Images/my_img.png';
 
 export default function About() {
 
@@ -23,9 +22,9 @@ export default function About() {
     }, []);
 
     return (
-        <section className='about-section' id='about'>
-            <div className='about-container'>
-                <div className="about-css">
+        <section className='about__section' id='about'>
+            <div className='about__container'>
+                <div className="about__style">
                     <h1>{aboutData.page_title}</h1>
                     <p>
                         Hello! I'm Valentin, a engineer based in Brasov, Romania.
@@ -38,7 +37,7 @@ export default function About() {
                     <p>
                         Here are a few technologies I've been working with recently:
                     </p>
-                    <ul className="tech">
+                    <ul className="about__tech">
                         <li>{aboutData.tech_third} & {aboutData.tech_fourth}</li>
                         <li>{aboutData.tech}</li>
                         <li>{aboutData.tech_second}</li>
@@ -47,7 +46,6 @@ export default function About() {
                         <li>{aboutData.tech_sixth}</li>
                     </ul>
                 </div>
-                <img src={my_img} alt="Loading..." />
             </div>
         </section>
     )

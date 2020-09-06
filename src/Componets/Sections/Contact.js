@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import Social from '../Sections/Social';
 import { contactUrl } from '../config';
 import { mail } from '../config';
 import '../Style/Contact.css';
@@ -20,14 +21,15 @@ export default function Contact() {
     }, []);
 
     return (
-        <section className="contact-section" id="contact">
-            <div className="contact-css">
+        <section className="contact__section" id="contact">
+            <div className="contact__container">
                 <h1>Get In Touch</h1>
                 <p>{data.description}</p>
                 <p><FaPhoneAlt className="contact-icons" />{data.phone}</p>
                 <p><FaEnvelope className="contact-icons" />{data.email}</p>
                 <a href={`mailto:${mail}`}>Email Me @</a>
             </div>
+            <Social />
         </section>
     )
 }

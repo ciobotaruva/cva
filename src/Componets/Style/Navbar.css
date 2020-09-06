@@ -1,225 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar, .logo-nav, ul, .clock-weather, .data, .nav-link, .hamburger {
-    display: flex;
-}
-
 .navbar{
-    position:fixed;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    background-color: #242726;
-    font-family: 'Poppins', sans-serif;
-    z-index: 2;
-}
-
-.logo-nav{
-    align-items: center;
-    height: 100%;
-}
-
-.logo{
-    width: 80px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 30px;
-    text-decoration: none;
-    color: #FFED4F;
-}
-
-ul{
-    width: 70%;
-    height: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.nav-link{
-    color:#fafafa;
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
-    align-items: center;
-    height: 100%;
-    margin-top: 50px;
-    height: 40px;
-}
-
-.nav-link li{
-    height: 70%;
-}
-
-.nav-link:hover{
-    border-bottom: 1px solid #FFED4F;
-}
-
-.logo:hover{
-    cursor: pointer;
-}
-
-.menu-container{
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
+    height: 48px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px #DBDBDB solid;
+}
+
+.navbar__logo__menu{
+    width: 90vw;
+}
+
+.navbar__logo{
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #000;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 48px;
+    padding: 0px 20px;
+}
+
+.navbar__logo:hover{
+    cursor: pointer;
+}
+
+.navbar___menu{
+    display: none;
+}
+
+.navbar___menu.open{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     right: 0;
+    top:0;
+    background-color: #f8f8f8;
     width: 50%;
     height: 100vh;
-    background-color: #313332;
-    display: none;
+    z-index: -1;
 }
 
-.menu-container.open{
-    display: block;
+.navbar__link{
+    text-decoration: none;
+    list-style-type:none;
+    color: #000;
+    padding: 35px 0;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar__link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar__hamburger{
+    position: absolute;
+    right: 6vw;
+    top: 7.5px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
-
-.clock-weather{
-    display: none;
-}
-
-.hamburger{
-    position: absolute;
-    right: 5%;
-    height: 31px;
-    flex-direction: column;
     justify-content: space-evenly;
-    cursor: pointer;
-    z-index: 2;
+    align-items: center;
+    width: 60px;
+    height: 30px;    
 }
-    
-.hamburger-line{
-    background-color: #fff;
+
+.navbar__hamburger__line{
     width: 30px;
-    height: 3px;
-    border-radius: 1px;
+    height: 4px;
+    background-color: #000;
 }
 
-.hamburger.is-open .hamburger-line:nth-child(1){
-     transform: translateY(8.5px) rotate(45deg);
-
+.navbar__hamburger.is__open .navbar__hamburger__line:nth-child(1){
+    transform: translateY(8.5px) rotate(45deg)
 }
 
-.hamburger.is-open .hamburger-line:nth-child(2){
+.navbar__hamburger.is__open .navbar__hamburger__line:nth-child(2){
     opacity: 0;
 }
 
-.hamburger.is-open .hamburger-line:nth-child(3){
-    transform:translateY(-8.5px) rotate(-45deg);
+.navbar__hamburger.is__open .navbar__hamburger__line:nth-child(3){
+    transform: translateY(-8.5px) rotate(-45deg)
 }
 
 @media only screen and (min-width: 768px){
-    .navbar{
-        z-index: 2;
+    .navbar__logo__menu{
+        width: 60vw;
     }
 
-    .clock-weather{
-        display: inline-block;
-        position: fixed;
-        top: 0;
-        height: 60px;
-        line-height: 60px;
-        right: 100px;
-        width: 400px;
-        z-index: -1;
+    .navbar__hamburger{
+       display: none;    
     }
 
-    .clock-weather img{
-        padding-top: 5px;
-        width: 60px;
-    }
-
-
-    .data{
-        justify-content: space-evenly;
-        height: 50px;
-    }
-
-    .clock{
-        width: 80px;
-    }
-
-    .data .clock span{
-        font-size: 20px;
-        color: #FFED4F;
-    }
-
-    .data span {
-        font-size: 20px;
-        color: #fff;
-    }
-
-    .logo{
-        height: 100%;
-        width: 60px;
-        line-height: 60px;
-        font-size: 25px;
-        padding-left: 4px;
-    }
-}
-
-@media only screen and (min-width: 992px){
-    .clock{
-        width: 90px;
-    }    
-
-    .data .clock span{
-        font-size: 18px;
-    }
-
-    .data span {
-        font-size: 18px;
-    }
-
-    .logo{
-        width: 85px;
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .logo{
-        height: 100%;
-        width: 20%;
-        line-height: 45px;
-    }
-
-    .hamburger{
-        display: none;
-    }
-
-    .menu-container{
-        display: block;
+    .navbar___menu{
+        height: 48px;
         position: absolute;
-        left: 10%;
+        right: 20vw;
+        top: 0;
         display: flex;
-        height: 60px;
-        background-color: #242726;;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50vw;
     }
 
-    .nav-link{
-        margin-top: 0;
+    .navbar__link{
+        width: 120px;
     }
 
-    .data span {
-        font-size: 20px;
-    }
-
-    .data .clock span{
-        font-size: 20px;
-    }
-}
-
-@media only screen and (min-width: 1800px){
-    .logo{
-        height: 100%;
-        width: 100px;
-        line-height: 60px;
-    }
+    .navbar__link > li{
+        font-size: 16px;
+        padding: 0 10px;
+    } 
 }
