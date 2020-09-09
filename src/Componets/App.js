@@ -21,7 +21,6 @@ export default function App() {
         <BrowserRouter>
             <div className="app">
                 <Navbar />
-                <Social />
                 <Home exact path='home' component={Home} />
                 <Portfolio exact path='portfolio' component={Portfolio} />
                 <About exact path='about' component={About} />
