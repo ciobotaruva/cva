@@ -46,3 +46,14 @@
     color: #3f729b;
     border: 1px  #3f729b solid;
 }
+
+@media only screen and (min-width:768px){
+    .contact__container > *{
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .contact__container > h1{
+        font-size: 42px;
+    }
+}

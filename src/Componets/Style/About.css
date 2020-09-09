@@ -30,7 +30,7 @@
 }
 
 .about__style span{
-    font-size-adjust: 18px;
+    font-size: 18px;
     color: #3f729b;
     text-decoration: underline;
 }
@@ -40,6 +40,7 @@
 }
 
 .about__tech{
+    width: 60%;
     margin-left: 30px;
     color: #3f729b;
     columns: 2;
@@ -47,4 +48,27 @@
     -moz-columns: 2;
     font-size: 14px;
     margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    .about__style > h1{
+        font-size: 42px;
+    }
+
+    .about__style > p{
+        font-size: 22px;
+    }
+
+    .about__style{
+        max-width: 800px;
+    }
+
+    .about__style span{
+        font-size:24px;
+    }
+    
+    .about__tech{
+        font-size: 22px;
+    }
+
 }

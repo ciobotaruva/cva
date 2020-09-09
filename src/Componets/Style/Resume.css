@@ -45,3 +45,26 @@
     color: #3f729b;
     border: 1px  #3f729b solid;
 }
+
+@media only screen and (min-width:768px){
+    .resume__container > h1{
+       font-size: 42px;
+    }
+
+    
+    .resume__card > h2{
+        font-size: 30px;
+    }
+
+    .resume__card > h3{
+        font-size: 24px;
+    }
+
+    .resume__card > h4{
+        font-size: 20px;
+    }
+
+    .resume__container > a{
+        font-size: 22px;
+    }
+}

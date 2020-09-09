@@ -74,3 +74,9 @@
         font-weight: 500;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .home__container{
+        max-width: 1000px;
+    }
+}

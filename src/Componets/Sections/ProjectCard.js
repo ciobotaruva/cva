@@ -8,7 +8,9 @@ export default function ProjectCard({ project }) {
         <>
             <div className="portfolio__card">
                 <h2>{project.name}</h2>
-                <img className="portfolio__img" src={project.image} alt="Loading..." />
+                <div className="portfolio__img__container">
+                    <img className="portfolio__img" src={project.image} alt="Loading..." />
+                </div>
                 <div className="portfolio__details">
                     <p>{project.description}</p>
                     <p>{project.tech}</p>
