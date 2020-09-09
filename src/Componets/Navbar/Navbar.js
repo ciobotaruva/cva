@@ -28,15 +28,15 @@ export default function Navbar() {
                 <ul className="navbar___menu" id="navbar__menu">
                     <Link
                         className="navbar__link"
-                        to='/#about'
-                    >
-                        <li>About</li>
-                    </Link>
-                    <Link
-                        className="navbar__link"
                         to='/#portfolio'
                     >
                         <li>Portfolio</li>
+                    </Link>
+                    <Link
+                        className="navbar__link"
+                        to='/#about'
+                    >
+                        <li>About</li>
                     </Link>
                     <Link
                         className="navbar__link"
